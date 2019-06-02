@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of hexy. See LICENSE file for full copyright and licensing details.
+# Part of smurf. See LICENSE file for full copyright and licensing details.
 
 """Project metadata
 
@@ -10,7 +10,7 @@ Information describing the project.
 package = 'smurf'
 project = 'string morping, for smurfing from a string to another'
 
-version = "2019.06.02"
+version = "2019.06.03"
 
 description =project
 authors = ['Erdal Yildiz']
