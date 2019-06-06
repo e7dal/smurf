@@ -46,7 +46,7 @@ def ms(f,m,t):                              #
  d['t']=d['to']=t                           #
  return _msg.format(**d)                    #
 #123456789012345678901234567890123456789012 #
-def m(f,t,d):                               #
+def m(f,t,d,C=pcs):                         #
  '''for morfing a string randomly from a    #
     source string to a random string        #
     for example,try:                        #
@@ -86,13 +86,13 @@ def m(f,t,d):                               #
   while lf>lt:                              #
    r=ri(0,lf-1)                             #
    f=f[:r]+f[r+1:]                          #
-   pcs(ms(of,f,t),T)                        #
+   C(ms(of,f,t),T)                          #
    lf=len(f)                                #
  if lf<lt:                                  #
   while lf<lt:                              #
    r=ri(0,lf-1)                             #
    f=f[:r]+t[-r]+f[r:]                      #
-   pcs(ms(of,f,t),T)                        #
+   C(ms(of,f,t),T)                          #
    lf=len(f)                                #
  n=0                                        #
  l=[0 for i in range(lt)]                   #
@@ -104,9 +104,9 @@ def m(f,t,d):                               #
   c=t[r]                                    #
   #t=t[:r]+t[r+1:]                          #
   f=f[:r]+c+f[r+1:]                         #
-  pcs(ms(of,f,t),T)                         #
+  C(ms(of,f,t),T)                           #
   lt=len(t)                                 #
- pcs(ms(of,f,t),T)                          #
+ C(ms(of,f,t),T)                            #
                                             #
                                             #
  #thnx='''\nthats all folks!                #
@@ -142,5 +142,5 @@ def main():                                 #
  m(f=f,t=t,d=d)                             #
 #123456789012345678901234567890123456789012 #
 if __name__ == '__main__':                  #
- main()
+ main()                                     #
 #123456789012345678901234567890123456789012 #
