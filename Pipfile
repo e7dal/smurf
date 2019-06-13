@@ -9,8 +9,10 @@ docopt = "*"
 smurf = {editable = true,path = "."}
 httpie = "*"
 hug = "*"
+requests = "*"
+leven = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
