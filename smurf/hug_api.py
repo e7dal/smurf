@@ -17,7 +17,7 @@ def get_smurf(_f:hug.types.text,            #
  '''get a smurf, a morfing string'''        #
  sm=Smurf('smurf')                          #
  print("from=%s&to=%s"%(_f,_t))             #
- r=smurf.docopt_cli.m(_f,_t,0,C=sm.pcs)    #
+ r=smurf.docopt_cli.m(_f,_t,0,C=sm.pcs)     #
  return sm.ml                               #
 #123456789012345678901234567890123456789012 #
 _examples="_f=hello&_t=world"               #
@@ -38,8 +38,9 @@ def get_cycle(_f:hug.types.text,            #
  '''get a smurf, a morfing string'''        #
  global ml                                  #
  ml=[]                                      #
+ sm=Smurf('smurf')                          #
  print("from=%s&to=%s"%(_f,_t))             #
- r=smurf.docopt_cli.m(_f,_t0,sm.pcs)        #
+ r=smurf.docopt_cli.m(_f,_t,sm.pcs)         #
  r=smurf.docopt_cli.m(_t,_f,_d)             #
  #res=r+r[1:-1]                             #
  cres=cycle(ml)                             #
