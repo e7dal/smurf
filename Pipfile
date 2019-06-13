@@ -6,8 +6,9 @@ name = "pypi"
 [packages]
 ipython = "*"
 docopt = "*"
-smurf = {path = ".",editable = true}
+smurf = {editable = true,path = "."}
 httpie = "*"
+hug = "*"
 
 [dev-packages]
 
