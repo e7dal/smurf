@@ -21,6 +21,7 @@ clean-pyc:
 
 version:
 	echo `date +%Y.%m.%d` >VERSION.txt
+	sed -i "s/^version =.*/version = \"`date +%Y.%m.%d`\"/" smurf/metadata.py
 
 dist: clean 
 	python setup.py sdist
