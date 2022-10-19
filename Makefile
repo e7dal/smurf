@@ -4,6 +4,7 @@ help:
 	@echo "upload_to_pypi - upload a release"
 	@echo "version - upDATE version"
 	@echo "dist - package"
+	@echo "demo - demo hello world"
 
 
 clean: clean-build clean-pyc
@@ -32,6 +33,10 @@ install: clean
 	python setup.py bdist_wheel
 	pip install -U ./dist/smurf-*-py2.py3-none-any.whl
 
+
+demo: install
+	echo "the output of smurf is random, so for now just the hello world:) , does it look right?"
+	smurf from "(:hello world" to "merhaba dünya:)"
 
 upload_to_pypi:
 	twine upload dist/*
