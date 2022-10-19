@@ -19,3 +19,6 @@ jobs:
       
     - name: Install
       run: make install
+    
+    - name: Demo
+      run: make demo
