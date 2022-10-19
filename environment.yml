@@ -1,4 +1,6 @@
 name: base
 dependencies:
   - docopt
-  - hug
+  - pip
+  - pip:
+    - hug
